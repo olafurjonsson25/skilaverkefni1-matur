@@ -8,9 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
+        /* CSS rule to change the text color of the dropdown menu */
+        select {
+            color: black;
+            /* Change to your desired text color */
         }
     </style>
 </head>
@@ -23,7 +26,13 @@
                 <li><a href="index.html" class="hover:bg-gray-600 px-4 py-2 rounded">Home</a></li>
                 <li><a href="menu.html" class="hover:bg-gray-600 px-4 py-2 rounded">Menu</a></li>
                 <li><a href="about.html" class="hover:bg-gray-600 px-4 py-2 rounded">About Us</a></li>
-                <li><a href="#contact" class="hover:bg-gray-600 px-4 py-2 rounded">Contact</a></li>
+                <li>
+                    <select id="contactSelect" class="bg-white border border-gray-300 rounded-md px-2 py-1">
+                        <option value="General Request">Message Us: General </option>
+                        <option value="Restaurant">Message Us: Restaurant</option>
+                        <option value="Office">Message Us: Office</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </header>
@@ -33,15 +42,12 @@
         <section id="home" class="mb-8">
             <h1 class="text-5xl font-bold mb-4"> The Hungry Llama</h1>
             <h1 class="text-3xl font-bold mb-4"> Where Good Food Meets Great Company!</h1>
-
         </section>
 
         <section id="menu" class="mb-8 mx-auto">
-
             <h2 class="text-2xl font-bold mb-4">Here are three of our most popular items on the menu! Check out the menu
                 for more items</h2>
         </section>
-
 
         <section id="photos" class="mb-8">
             <h2 class="text-2xl font-bold mb-4">Photos</h2>
@@ -52,7 +58,6 @@
             </div>
         </section>
     </main>
-
 
     <footer class="bg-red-500 text-white py-4 flex justify-center">
         <section id="contact"
@@ -65,8 +70,13 @@
         </section>
     </footer>
 
-
-
+    <script>
+        // Redirect to the appropriate page based on dropdown selection
+        document.getElementById('contactSelect').addEventListener('change', function () {
+            var selection = this.value.toLowerCase();
+            window.location.href = selection + '.html';
+        });
+    </script>
 </body>
 
 </html>

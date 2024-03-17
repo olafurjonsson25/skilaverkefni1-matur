@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Message</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <header class="bg-red-500 text-white py-4">
+        <nav class="container mx-auto flex justify-center">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:bg-gray-600 px-4 py-2 rounded">Home</a></li>
+                <li><a href="menu.html" class="hover:bg-gray-600 px-4 py-2 rounded">Menu</a></li>
+                <li><a href="about.html" class="hover:bg-gray-600 px-4 py-2 rounded">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-8 flex-grow text-center"
+        style="background-image: url('images/hungry\ lama\ mynd.png'); background-size: cover; background-position: center;">
+        <section id="office-message" class="mb-8">
+            <h1 class="text-3xl font-bold mb-4">Office Message</h1>
+            <p>Leave your message for the office:</p>
+            <textarea id="office-text" class="border border-gray-300 rounded-md px-2 py-1"></textarea>
+            <button onclick="submitMessage()" class="bg-red-500 text-white py-2 px-4 rounded mt-4">Submit</button>
+        </section>
+    </main>
+
+    <footer class="bg-red-500 text-white py-4 flex justify-center">
+        <section id="contact"
+            class="container mx-auto flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+            <h2 class="text-2xl font-bold mb-4 md:mb-0">Contact</h2>
+            <p>Address: 1404 Food Road</p>
+            <p>Phone Number: 555-3212</p>
+            <p>Email address: frontdesk@hungryllama.com</p>
+            <p>Opening hours: 09:00 - 22:00 Every Day</p>
+        </section>
+    </footer>
+
+    <script>
+        function submitMessage() {
+            var message = document.getElementById('office-text').value;
+
+            console.log(message);
+            alert("Message submitted!");
+        }
+    </script>
+</body>
+
+</html>

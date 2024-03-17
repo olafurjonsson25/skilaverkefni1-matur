@@ -4,24 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Restaurant</title>
+    <title>The Hungry Llama</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="font-sans flex flex-col min-h-screen">
 
-    <header class="bg-gray-800 text-white py-4">
+    <header class="bg-red-500 text-white py-4">
         <nav class="container mx-auto flex justify-center">
             <ul class="flex space-x-4">
                 <li><a href="index.html" class="hover:bg-gray-600 px-4 py-2 rounded">Home</a></li>
-                <li><a href="#menu" class="hover:bg-gray-600 px-4 py-2 rounded">Menu</a></li>
+                <li><a href="menu.html" class="hover:bg-gray-600 px-4 py-2 rounded">Menu</a></li>
                 <li><a href="about.html" class="hover:bg-gray-600 px-4 py-2 rounded">About Us</a></li>
                 <li><a href="#contact" class="hover:bg-gray-600 px-4 py-2 rounded">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container mx-auto py-8 flex-grow">
+    <main class="container mx-auto py-8 flex-grow text-center"
+        style="background-image: url('images/hungry\ lama\ mynd.png'); background-size: cover; background-position: center;">
+
         <section id="home" class="mb-8">
             <h1 class="text-3xl font-bold mb-4">About the restaurant</h1>
         </section>
@@ -39,14 +48,47 @@
                 Come join us at The Hungry Llama, where good food meets great company.
             </p>
         </section>
+        <section id="about" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Information & training </h2>
+            <p>We want all new employees to receive all necessary information in the right time and form when
+                appropriate.
+
+                We want changes and other information to be communicated to all employees in a clear and secure manner.
+
+                We want all employees to receive proper and timely training on the job.
+
+                We want all employees to know our training ladder and have full access to information about courses and
+                professional development
+            </p>
+        </section>
+        <section id="about" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Communication & fairness </h2>
+            <p>We want all communication in the workplace to be responsible and professional. Joy isn't forbidden, but
+                backtalk is.
+
+                We want all employees at The Happy Llama to be role models for new employees.
+                We want The Happy Llama's customers to experience interacting with The Happy Llama's staff as
+                professional, cheerful and
+                solution-oriented.
+
+                We ensure that everyone has equal rights to professional development and wages, we never discriminate
+                based on gender, sex, religion or nationality.
+                We want the door to flexibility to open in both directions. We can't demand flexibility if we can't
+                provide it in return.
+
+            </p>
+        </section>
+
     </main>
 
-    <footer class="bg-gray-800 text-white py-4 mt-auto">
-        <section id="contact" class="container mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+    <footer class="bg-red-500 text-white py-4 flex justify-center">
+        <section id="contact"
+            class="container mx-auto flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+            <h2 class="text-2xl font-bold mb-4 md:mb-0">Contact</h2>
             <p>Address: 1404 Food Road</p>
             <p>Phone Number: 555-3212</p>
-            <p>Email adress: </p>
+            <p>Email address: frontdesk@hungryllama.com</p>
+            <p>Opening hours: 09:00 - 22:00 Every Day</p>
         </section>
     </footer>
 

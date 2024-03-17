@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hungry Llama</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-sans flex flex-col min-h-screen">
+
+    <header class="bg-red-500 text-white py-4">
+        <nav class="container mx-auto flex justify-center">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:bg-gray-600 px-4 py-2 rounded">Home</a></li>
+                <li><a href="#menu" class="hover:bg-gray-600 px-4 py-2 rounded">Menu</a></li>
+                <li><a href="about.html" class="hover:bg-gray-600 px-4 py-2 rounded">About Us</a></li>
+                <li><a href="#contact" class="hover:bg-gray-600 px-4 py-2 rounded">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-8 flex-grow text-center"
+        style="background-image: url('images/hungry\ lama\ mynd.png'); background-size: cover; background-position: center;">
+
+        <section id="menu" class="mb-8">
+            <h1 class="text-3xl font-bold mb-4">Menu</h1>
+
+            <section id="salads" class="mb-8">
+                <h2 class="text-2xl font-bold mb-4">Salads</h2>
+                <ul class="grid grid-cols-3 gap-4">
+                    <li class="text-left">
+                        <img src="images/chicken-salad.png" alt="Chicken Caesar Salad" class="w-full h-auto mb-2">
+                        Chicken Caesar Salad with Romaine Lettuce, Grilled Chicken, Parmesan Cheese, and Caesar Dressing
+                    </li>
+                    <li class="text-left">
+                        <img src="images/chicken-salad-2.png" alt="Classic Cobb Salad" class="w-full h-auto mb-2">
+                        Classic Cobb Salad with Grilled Chicken, Avocado, Bacon, Hard-Boiled Eggs, Tomatoes, and Blue
+                        Cheese Dressing
+                    </li>
+                    <li class="text-left">
+                        <img src="images/salad.png" alt="Asian Chicken Salad" class="w-full h-auto mb-2">
+                        Asian Chicken Salad with Shredded Chicken, Mandarin Oranges, Crispy Wontons, and Sesame Ginger
+                        Dressing
+                    </li>
+                    <li class="text-left">
+                        <img src="images/selad.png" alt="Asian Chicken Salad" class="w-full h-auto mb-2">
+                        Asian Chicken Salad with Shredded Chicken, Mandarin Oranges, Crispy Wontons, and Sesame Ginger
+                        Dressing
+                    </li>
+                    <li class="text-left">
+                        <img src="images/bigsalad.png" alt="Big salad bowl" class="w-full h-auto mb-2">
+                        Asian Chicken Salad with Shredded Chicken, Mandarin Oranges, Crispy Wontons, and Sesame Ginger
+                        Dressing
+                    </li>
+                    <li class="text-left">
+                        <img src="images/weirdsalad.png" alt="Weird looking salad" class="w-full h-auto mb-2">
+                        Asian Chicken Salad with Shredded Chicken, Mandarin Oranges, Crispy Wontons, and Sesame Ginger
+                        Dressing
+                    </li>
+                    <li class="text-left">
+                        <img src="images/bacon-salad.png" alt="Bacon Salad" class="w-full h-auto mb-2">
+                        Asian Chicken Salad with Shredded Chicken, Mandarin Oranges, Crispy Wontons, and Sesame Ginger
+                        Dressing
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- Repeat the same structure for other menu sections -->
+
+        </section>
+    </main>
+
+    <footer class="bg-red-500 text-white py-4 flex justify-center">
+        <section id="contact"
+            class="container mx-auto flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+            <h2 class="text-2xl font-bold mb-4 md:mb-0">Contact</h2>
+            <p>Address: 1404 Food Road</p>
+            <p>Phone Number: 555-3212</p>
+            <p>Email address: frontdesk@hungryllama.com</p>
+            <p>Opening hours: 09:00 - 22:00 Every Day</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
